@@ -1,22 +1,21 @@
 //1.
-console.log(`You can ignore single and double quotes like this \\'\\' \\"\\"`);
+
+// let firstMonthSalary = Number(prompt('Enter first month salary', '0'));
+// let secondMonthSalary = Number(prompt('Enter second month salary', '0'));
+// alert(`Your salary for 2 month is ${firstMonthSalary + secondMonthSalary}`);
 
 //2.
-alert('Please enter your data');
-let Name = prompt('Please enter your name', 'Name');
-alert(`Your name is: ${Name}`);
-let Surname = prompt('Please enter your surname', 'Surname');
-alert(`Your full name is: ${Name} ${Surname}`);
-let Age = prompt('How old are you?');
-alert(`Your full name is: ${Name} ${Surname}, your age is: ${Age}`);
-let isAdmin = confirm('Are you admin?');
-alert(
-  `Your full name is: ${Name} ${Surname}, your age is: ${Age}, admin status: ${isAdmin}`
-);
+// let firstMonthSalary1 = Number(prompt('Enter first month salary', '0'));
+// let secondMonthSalary1 = Number(prompt('Enter second month salary', '0'));
+// alert(`You have extra bonus! Your total salary was: ${firstMonthSalary1 + secondMonthSalary1}$
+// It's  increase for 1$ and now it is ${firstMonthSalary1 + secondMonthSalary1 + 1}$`);
 
 //3.
-console.log(Boolean(alert('5'))); //alert не повертає нічого, тобто underfined, а приведене до булевого значення буде false
-console.log(true > false); //true приводиться до 1, а false до 0, тому результат true
-console.log(true > 5); //true приводиться до 1, а 1 < 5, тому результат false
-console.log(true < '5'); //true приводиться до 1, а рядок '5' до числа 5, тому результат true
-console.log(true > null); //true приводиться до 1, а null до 0, тому результат true
+const MinSalaryLevel = 2000;
+let firstMonthSalary2 = Number(prompt('Enter first month salary', '0'));
+let secondMonthSalary2 = Number(prompt('Enter second month salary', '0'));
+alert(
+  `Will you work next? ${
+    firstMonthSalary2 + secondMonthSalary2 + 1 >= MinSalaryLevel
+  }`
+);
